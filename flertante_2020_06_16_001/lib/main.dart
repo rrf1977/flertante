@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:flutter/rendering.dart'; // for random numbers
 // import 'package:flutter_svg/flutter_svg.dart';// Note - 2020y06m17d 10:36:58 - RRF - not working!!!
-import 'package:flutter_svg/flutter_svg.dart';
-
 
 String getNames(int code){ //code 0 to 2: 0 man name; 1 woman name; 2 family name
   Random random = new Random();
