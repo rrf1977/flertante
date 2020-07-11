@@ -29,3 +29,11 @@ subprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+// Note - 2020y07m10d 15:20:53 - RRF - from tutorials
+dependencies {
+  // Example existing classpath
+  classpath 'com.android.tools.build:gradle:3.2.1'
+  // Add the google services classpath
+  classpath 'com.google.gms:google-services:4.3.0'
+}

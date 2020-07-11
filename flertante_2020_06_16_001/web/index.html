@@ -18,6 +18,33 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+  <!-- Note - 2020y07m10d 15:16:32 - RRF - help, Mateus -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBMyLMwB5iBl_9KtDYqE7A1viScsE61now",
+      authDomain: "flertante-fc6c8.firebaseapp.com",
+      databaseURL: "https://flertante.firebaseio.com",
+      projectId: "flertante-fc6c8",
+      storageBucket: "flertante-fc6c8.appspot.com",//"aula04-flutter.appspot.com",
+      messagingSenderId: "922066119303",
+      // appId: "1:1025096401230:web:985f481756555179f49e1f"
+      appId: "1:189730268232:android:c2bb53a50e0b07c26c247d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->

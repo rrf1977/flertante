@@ -1,0 +1,147 @@
+import 'dart:math';
+
+String getNames(int code){ //code 0 to 2: 0 man name; 1 woman name; 2 family name
+  Random random = new Random();
+  // int randomNumber = random.nextInt(100); // from 0 upto 99 included
+
+// these are lists I created for S.O.II, 23/may/2020
+  List<String> namesFamily=[
+    "Cunha",
+    "Siqueira",
+    "Dorneles",
+    "Ribeiro",
+    "Gimenes",
+    "Almeida",
+    "Albuquerque",
+    "Ferreira",
+    "Alves",
+    "Nogueira",
+    "Junqueira",
+    "Santos",
+    "Passos",
+    "Dias",
+    "Silva",
+    "Campos",
+    "Bertolini",
+    "Tucci",
+    "Macedo",
+    "Fettuccine",
+    "Capuccini",
+    "Bianchini"
+  ];
+  List<String> namesMen=[
+    "Andre",
+    "Ronaldo",
+    "Arnaldo",
+    "Armando",
+    "Alfredo",
+    "Mateus",
+    "Onofrio",
+    "Jucelino",
+    "Jair",
+    "Judas",
+    "Jonas",
+    "Joan",
+    "José",
+    "Josias",
+    "Jeremias",
+    "Gabriel",
+    "Henrique",
+    "Ezequiel",
+    "Abraão",
+    "Jacob",
+    "Daniel",
+    "Natanael",
+    "Josiel",
+    "Gabriel",
+    "Juliano",
+    "Roberto",
+    "Adriano",
+    "Alexandre",
+    "Amin",
+    "Adão",
+    "Josue",
+    "Manuel",
+    "Marcos",
+    "Pedro",
+    "Paulo",
+    "Saulo",
+    "Camilo",
+    "Afonso",
+    "Mauricio",
+    "Maurelio",
+    "Fabricio",
+    "Josino",
+    "Avelino",
+    "Bruno",
+    "João",
+    "Rodrigo",
+    "Romualdo",
+    "Romildo",
+    "Ronaldo",
+    "Robervaldo",
+    "Valdo",
+    "Vando",
+    "Wando",
+    "Waldo"
+  ];
+  List<String> namesWomen=[
+    "Amanda",
+    "Ingrid",
+    "Raquel",
+    "Carol",
+    "Paola",
+    "Agda",
+    "Paula",
+    "Leticia",
+    "Sabrina",
+    "Simone",
+    "Sarah",
+    "Samanta",
+    "Ananda",
+    "Luciana",
+    "Juliana",
+    "Mariana",
+    "Sariana",
+    "Tariana",
+    "Irina",
+    "Helena",
+    "Jelena",
+    "Ielena",
+    "Yelena",
+    "Jennifer",
+    "Aline",
+    "Camila",
+    "Adriana",
+    "Caroline",
+    "Carolina",
+    "Catarina",
+    "Carina",
+    "Josequina",
+    "Jucelina",
+    "Serafina",
+    "Camile",
+    "Jamile",
+    "Valeria",
+    "Roberta",
+    "Bruna",
+    "Katia",
+    "Catia",
+    "Catiane",
+    "Katiane",
+    "Catiana",
+    "Katiana",
+    "Priscila"
+  ];
+
+  if (code == 0){
+    return namesMen[random.nextInt(namesMen.length)]; 
+  }
+  else if (code == 1){
+    return namesWomen[random.nextInt(namesWomen.length)]; 
+  }
+  else if (code == 2){
+    return namesFamily[random.nextInt(namesFamily.length)]; 
+  }
+  else return "<<error>>";
+}

@@ -61,3 +61,6 @@ flutter {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
+
+// Note - 2020y07m10d 15:21:17 - RRF - from tutorials
+apply plugin: 'com.google.gms.google-services'
